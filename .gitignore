@@ -1,21 +1,17 @@
-# 编译产物（无扩展名的可执行文件）
-01_hello/hello
-02_matrix/matrix_mul
-03_kalman/cpp/*
-!03_kalman/cpp/*.cpp
-04_lqr/cpp/*
-!04_lqr/cpp/*.cpp
+# 编译产物
+build/
 *.o
 *.out
-build/
+# 源码目录里的可执行文件（无扩展名）
+06_daily/*
+!06_daily/*.cpp
+*.exe
 # VS Code
 .vscode/ipch/
+.vscode/*.bak
 # Python
 __pycache__/
 *.pyc
 .venv/
-# 图片输出（可选保留，如需展示效果图请注释掉）
+# 图片输出
 *.png
-
-# VS Code 配置备份
-.vscode/*.bak

@@ -11,5 +11,8 @@
     "${workspaceFolder}/**",
     "/usr/include/eigen3"
   ],
-  "terminal.integrated.defaultProfile.linux": "bash"
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "C_Cpp.debugShortcut": false,
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "debug.defaultConfiguration": "▶ 编译并运行当前文件"
 }
