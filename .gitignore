@@ -16,3 +16,6 @@ __pycache__/
 .venv/
 # 图片输出（可选保留，如需展示效果图请注释掉）
 *.png
+
+# VS Code 配置备份
+.vscode/*.bak
