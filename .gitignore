@@ -1,0 +1,10 @@
+# 编译产物
+*.o
+*.out
+build/
+# VS Code
+.vscode/ipch/
+# Python
+__pycache__/
+*.pyc
+.venv/

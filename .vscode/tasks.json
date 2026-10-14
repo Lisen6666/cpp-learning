@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "编译当前文件 (g++ C++17)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17", "-Wall", "-O2", "-g",
+        "-I/usr/include/eigen3",
+        "${file}",
+        "-o", "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "编译并运行当前文件",
+      "type": "shell",
+      "command": "g++ -std=c++17 -Wall -O2 -g -I/usr/include/eigen3 '${file}' -o '${fileDirname}/${fileBasenameNoExtension}' && '${fileDirname}/${fileBasenameNoExtension}'",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
