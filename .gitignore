@@ -1,4 +1,10 @@
-# 编译产物
+# 编译产物（无扩展名的可执行文件）
+01_hello/hello
+02_matrix/matrix_mul
+03_kalman/cpp/*
+!03_kalman/cpp/*.cpp
+04_lqr/cpp/*
+!04_lqr/cpp/*.cpp
 *.o
 *.out
 build/
@@ -8,3 +14,5 @@ build/
 __pycache__/
 *.pyc
 .venv/
+# 图片输出（可选保留，如需展示效果图请注释掉）
+*.png
